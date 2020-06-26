@@ -1,0 +1,111 @@
+@mixin cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact {
+  background: var(--color0);
+  z-index: 4;
+  display: none;
+  #contact_title {
+    position: absolute;
+    top: 2%;
+    left: 1em;
+    color: #000;
+    font-weight: 900;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 1);
+    z-index: 10;
+    filter: url(#shad);
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      width: 60%;
+      height: 0.1em;
+      background-color: #000;
+    }
+  }
+  .contact_container_flex {
+    height: 100%;
+    width: 100%;
+    @include cent;
+    align-items: center;
+    .contact_container {
+      @include cent;
+      flex-direction: column;
+      align-items: center;
+      line-height: 4em;
+
+      font-family: "Notable", sans-serif;
+      z-index: 3;
+      .contact_cart {
+        font-size: 4.5em;
+        font-stretch: condensed;
+        color: var(--color0);
+        @include cent;
+        filter: url(#shad);
+        &:hover {
+          color: var(--colorX);
+          z-index: 40;
+        }
+      }
+      .cart1 {
+        left: 20%;
+      }
+      .cart2 {
+        left: -10%;
+      }
+      .cart3 {
+        left: 15%;
+      }
+      .cart4 {
+        left: -20%;
+      }
+      .cart5 {
+        left: 10%;
+      }
+      .cart6 {
+        left: -35%;
+      }
+    }
+    .contact_cart_info {
+      color: var(--color0);
+      background-color: #000;
+      font-size: 0.7em;
+      border: 0.3em #000 solid;
+      border-radius: 0.1em;
+      opacity: 0.2;
+      transition: all 1s;
+      // transition: z-index 2s;
+      position: absolute;
+    }
+    .info1 {
+      top: 35%;
+      left: 35%;
+    }
+    .info2 {
+      top: 50%;
+      left: 55%;
+    }
+    .info3 {
+      top: 50%;
+      left: 15%;
+    }
+    .info4 {
+      top: 64%;
+      left: 25%;
+    }
+    .info5 {
+      top: 72%;
+      left: 45%;
+    }
+    .info6 {
+      top: 20%;
+      left: 65%;
+    }
+    .info7 {
+      top: 56%;
+      left: 75%;
+    }
+  }
+}

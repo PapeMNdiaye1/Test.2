@@ -1,0 +1,164 @@
+#left_bar {
+  top: 2vh;
+  left: 0;
+  width: 3em;
+  height: 96vh;
+  background-color: var(--color0);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 0em 0.5em 0.5em 0em;
+  z-index: 10;
+  overflow: hidden;
+  transition: width 0.5s;
+
+  &:hover #logo_at_bottom,
+  &:hover #logo_at_bottom2 {
+    left: 50%;
+  }
+
+  #face {
+    position: absolute;
+    top: 2.5vh;
+    left: 15%;
+    width: 2em;
+    height: 2em;
+    background-image: url(images/face.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+    border: 1px var(--colorX) solid;
+    box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      width: 300%;
+      height: 106%;
+      background: var(--colorX);
+      // background: red;
+      box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+  }
+
+  #tabs {
+    position: absolute;
+    top: 25%;
+    left: -3.9em;
+    width: 6em;
+    height: 40vh;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tab_titel {
+      position: absolute;
+      top: 30%;
+      right: 37%;
+      font-weight: 700;
+      text-align: center;
+      width: 70%;
+    }
+    .tab_titel3 {
+      left: 1%;
+    }
+  }
+
+  .tab {
+    margin-bottom: 2em;
+    left: 0em;
+    width: 100%;
+    height: 2.5em;
+    font-size: 0.8em;
+    box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0em 0.2em 0.2em 0em;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    background: var(--color0);
+    color: var(--colorX);
+    transition: left 0.5s;
+    cursor: pointer;
+    // #######################################
+    &::before {
+      content: "";
+      position: absolute;
+      top: var(--top);
+      left: var(--left);
+      width: 2em;
+      height: 2em;
+      background: var(--color0);
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+      border-radius: 50%;
+      transition: transform 1s, opacity 1s;
+    }
+    &:active::before {
+      transition-duration: 0s;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+    }
+
+    // ######################################################"
+    .tab_icon {
+      position: absolute;
+      top: 27%;
+      right: 3%;
+      width: 2.2em;
+      height: 100%;
+      text-align: right;
+      font-size: 1.2em;
+      padding-right: 6px;
+      pointer-events: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: 35%;
+        width: 1px;
+        height: 55%;
+        background: var(--colorX);
+      }
+    }
+
+    .tab_titel {
+      position: absolute;
+      top: 30%;
+      right: 37%;
+      font-weight: 700;
+      pointer-events: none;
+    }
+    .tab_titel3 {
+      left: 1%;
+    }
+  }
+  #tab1 {
+    left: 0em;
+    box-shadow: 0px 0.5px 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--colorX);
+    color: var(--color0);
+    transition: left 0.5s;
+  }
+
+  // #logo_at_bottom,
+  // #logo_at_bottom2 {
+  //   position: absolute;
+  //   bottom: 0%;
+  //   left: 0;
+  //   width: 3em;
+  //   height: 2em;
+  //   background: "";
+  //   background-size: 100%;
+  //   background-image: url(images/Logo.svg);
+  //   background-repeat: no-repeat;
+  //   transition-duration: 1s;
+  //   display: block;
+  //   z-index: 2;
+  // }
+
+  // #logo_at_bottom2 {
+  //   background-image: url(images/Logoligth.svg);
+  //   z-index: 1;
+  // }
+}
