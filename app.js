@@ -166,7 +166,7 @@ function theme(e) {
       "#4D1720"
     );
   }
-  if (item.classList[1] === "mode2") {
+  if (item.classList[0] === "mode2") {
     darckmode("block", "none");
   }
 }
