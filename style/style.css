@@ -733,138 +733,6 @@ strong {
   overflow: hidden;
 }
 
-#all #work .stuffs_img1a {
-  background-image: url(images/website1.gif);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img1b {
-  background-image: url(images/website1.gif);
-}
-
-#all #work .stuffs_img1c {
-  background-image: url(images/website1.gif);
-}
-
-#all #work .stuffs_img1d {
-  background-image: url(images/website1.gif);
-}
-
-#all #work .stuffs_img1e {
-  background-image: url(images/website1.gif);
-}
-
-#all #work .stuffs_img2a {
-  background-image: url(images/website2.png);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img2b {
-  background-image: url(images/website2.png);
-}
-
-#all #work .stuffs_img2c {
-  background-image: url(images/website2.png);
-}
-
-#all #work .stuffs_img2d {
-  background-image: url(images/website2.png);
-}
-
-#all #work .stuffs_img2e {
-  background-image: url(images/website2.png);
-}
-
-#all #work .stuffs_img3a {
-  background-image: url(images/website3.jpg);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img3b {
-  background-image: url(images/website3.jpg);
-}
-
-#all #work .stuffs_img3c {
-  background-image: url(images/website3.jpg);
-}
-
-#all #work .stuffs_img3d {
-  background-image: url(images/website3.jpg);
-}
-
-#all #work .stuffs_img3e {
-  background-image: url(images/website3.jpg);
-}
-
-#all #work .stuffs_img4a {
-  background-image: url(images/website4.jpg);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img4b {
-  background-image: url(images/website4.jpg);
-}
-
-#all #work .stuffs_img4c {
-  background-image: url(images/website4.jpg);
-}
-
-#all #work .stuffs_img4d {
-  background-image: url(images/website4.jpg);
-}
-
-#all #work .stuffs_img4e {
-  background-image: url(images/website4.jpg);
-}
-
-#all #work .stuffs_img5a {
-  background-image: url(images/website5.gif);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img5b {
-  background-image: url(images/website5.gif);
-}
-
-#all #work .stuffs_img5c {
-  background-image: url(images/website5.gif);
-}
-
-#all #work .stuffs_img5d {
-  background-image: url(images/website5.gif);
-}
-
-#all #work .stuffs_img5e {
-  background-image: url(images/website5.gif);
-}
-
-#all #work .stuffs_img6a {
-  background-image: url(images/website6.jpg);
-  z-index: 1;
-  display: block;
-}
-
-#all #work .stuffs_img6b {
-  background-image: url(images/website6.jpg);
-}
-
-#all #work .stuffs_img6c {
-  background-image: url(images/website6.jpg);
-}
-
-#all #work .stuffs_img6d {
-  background-image: url(images/website6.jpg);
-}
-
-#all #work .stuffs_img6e {
-  background-image: url(images/website6.jpg);
-}
-
 #all #work #work_background {
   position: absolute;
   top: 0%;
@@ -1005,12 +873,7 @@ strong {
   background: transparent;
 }
 
-#all #work .mobile_work .mobiles1 {
-  background-image: url(images/6c335ade51e70660ac9c160cd903a258.jpg);
-}
-
 #all #work .mobile_work .mobiles2 {
-  background-image: url(images/8af15509f80a6109b8051df2c3bd04d1.jpg);
   margin-top: 5em;
 }
 
@@ -1022,10 +885,6 @@ strong {
 #all #work .mobile_work .mobiles2 .creation_date {
   top: 1.2%;
   left: 20%;
-}
-
-#all #work .mobile_work .mobiles3 {
-  background-image: url(images/48325806467331c03c99e98fda4a0cd4.jpg);
 }
 
 #all #work .mobile_work .mobiles3 .mobiles_title {
@@ -1150,7 +1009,6 @@ strong {
 }
 
 #all #designe .all_desinge_container .designe_post {
-  background-image: url("images/designe2.jpg");
   background-size: 100%;
   background-position: center;
   border-radius: 0.2em;
@@ -1207,15 +1065,20 @@ strong {
 
 #all #designe .all_desinge_container .designe_post7 {
   background-image: url("images/designe7.jpg");
+  top: 0.8em;
+  left: 0.5em;
 }
 
 #all #designe .all_desinge_container .designe_post8 {
   background-image: url("images/designe8.jpg");
   top: 0.8em;
+  left: 0.5em;
 }
 
 #all #designe .all_desinge_container .designe_post9 {
   background-image: url("images/designe9.jpg");
+  top: 0.8em;
+  left: 0.5em;
 }
 
 #all #sckil {
@@ -1581,7 +1444,7 @@ strong {
   color: var(--color0);
   background-color: var(--colorX);
   font-size: 0.6em;
-  border: 0.3em #000 solid;
+  border: 0.3em var(--colorX) solid;
   border-radius: 0.1em;
   opacity: 0.1;
   -webkit-transition: all 1s;
