@@ -442,7 +442,7 @@ const positionOfContacteInfo = (index) => {
   let cartX = contactCarts[index].getBoundingClientRect().x;
   let cartW = contactCarts[index].getBoundingClientRect().width;
 
-  contactCartInfos[index].style.top = cartY + cartH + "px";
+  contactCartInfos[index].style.top = cartY + cartH + 5 + "px";
   contactCartInfos[index].style.left = cartX + cartW - infoW + "px";
   contactCartInfos[index].style.opacity = "1";
   contactCartInfos[index].style.zIndex = "14";

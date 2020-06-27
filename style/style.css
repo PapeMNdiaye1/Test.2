@@ -86,18 +86,19 @@ strong {
   top: 2%;
   left: 1em;
   color: #000;
+  font-size: 0.9em;
   font-weight: 900;
   z-index: 1;
   -webkit-filter: url(#shad);
           filter: url(#shad);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
 }
 
 #all #home #my_name::after {
   content: "";
   position: absolute;
   bottom: 0%;
-  width: 20em;
+  width: 17em;
   height: 0.1em;
   background-color: #000;
   -webkit-filter: url(#shad);
@@ -111,7 +112,7 @@ strong {
   width: auto;
   height: auto;
   color: black;
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-weight: 900;
   -webkit-text-stroke-width: 1px;
   padding: 0.5em;
@@ -124,8 +125,8 @@ strong {
   position: absolute;
   top: 35%;
   left: 15%;
-  width: 20em;
-  height: 11em;
+  width: 17em;
+  height: 10em;
   background-size: 140%;
   background-repeat: no-repeat;
   background-position: center;
@@ -158,7 +159,7 @@ strong {
   height: 7em;
   top: 40%;
   left: 45%;
-  font-size: 0.8em;
+  font-size: 0.6em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -180,7 +181,7 @@ strong {
   max-width: 15em;
   width: 40%;
   font-weight: 700;
-  font-size: 0.7em;
+  font-size: 0.6em;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,6 +271,7 @@ strong {
   left: 55%;
   width: 40%;
   height: 4.5%;
+  font-size: 0.8em;
   max-height: 3em;
   background: var(--color_worck_navba);
   -webkit-box-shadow: 3px 5px 54px rgba(0, 0, 0, 0.1);
@@ -327,6 +329,7 @@ strong {
   position: absolute;
   top: 2%;
   left: 1em;
+  font-size: 0.9em;
   color: #000;
   font-weight: 900;
   text-shadow: 1px 0px 0px black;
@@ -346,16 +349,16 @@ strong {
 
 #all #work .web_work {
   position: absolute;
-  top: 15vh;
+  top: 18vh;
   left: -100%;
   width: 90%;
-  height: 90%;
+  height: 70%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 30% 30%;
       grid-template-columns: 30% 30% 30%;
   grid-column-gap: 5%;
-  grid-row-gap: 10%;
+  grid-row-gap: 20%;
   -ms-grid-rows: 40% 40%;
       grid-template-rows: 40% 40%;
   opacity: 1;
@@ -397,8 +400,8 @@ strong {
 }
 
 #all #work .web_work .stuffs {
-  width: 16em;
-  height: 12em;
+  width: 14em;
+  height: 10em;
   background-color: var(--colorX);
   border: 0.2em var(--colorX) solid;
   border-radius: 0.2em;
@@ -466,7 +469,7 @@ strong {
   width: 40%;
   margin-top: 4%;
   margin-left: 0.3em;
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--color0);
 }
 
@@ -535,8 +538,8 @@ strong {
   top: 0;
   left: 0;
   background: var(--color0);
-  width: 40em;
-  height: 35em;
+  width: 35em;
+  height: 30em;
   border-radius: 0.2em;
   -webkit-box-shadow: 0px 0.5px 24px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0.5px 24px rgba(0, 0, 0, 0.2);
@@ -550,7 +553,7 @@ strong {
   position: absolute;
   top: -1%;
   left: -2%;
-  width: 1.4em;
+  width: 1.2em;
   height: 1.1em;
   z-index: 2;
   border-radius: 0.1em;
@@ -558,8 +561,7 @@ strong {
           box-shadow: 0px 0.5px 24px rgba(0, 0, 0, 0.2);
   background-color: var(--color0);
   color: #000;
-  font-size: 1.3em;
-  opacity: 0.9;
+  font-size: 1em;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,7 +589,7 @@ strong {
 #all #work #pres_invi .presantation .presantation_img {
   width: 98%;
   height: 67%;
-  top: 0.4em;
+  top: 0.15em;
   margin: auto;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -609,8 +611,8 @@ strong {
   position: absolute;
   right: -2%;
   bottom: 30%;
-  width: 5em;
-  height: 2em;
+  width: 4em;
+  height: 1.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +638,7 @@ strong {
   height: 100%;
   color: #222;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
   cursor: pointer;
 }
 
@@ -902,11 +904,11 @@ strong {
 
 #all #work .mobile_work .mobiles {
   max-width: 14em;
-  width: 25em;
-  height: 28em;
+  width: 12em;
+  height: 24em;
   background: #222;
-  border: 0.3em var(--colorX) solid;
-  border-radius: 0.5em;
+  border: 0.2em var(--colorX) solid;
+  border-radius: 0.2em;
   margin: 5%;
   margin-top: 3em;
   -webkit-box-shadow: 0px 0.5px 24px rgba(0, 0, 0, 0.2);
@@ -938,11 +940,11 @@ strong {
 #all #work .mobile_work .mobiles .mobiles_title,
 #all #work .mobile_work .mobiles .creation_date {
   position: absolute;
-  width: 6em;
-  height: 1.4em;
+  width: 5em;
+  height: 1.2em;
   bottom: -4%;
   left: 64%;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--colorX);
   -webkit-box-shadow: 0px 0.5px 24px rgba(24, 21, 21, 0.2);
           box-shadow: 0px 0.5px 24px rgba(24, 21, 21, 0.2);
   display: -webkit-box;
@@ -957,7 +959,7 @@ strong {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-radius: 0.2em;
+  border-radius: 0.1em;
   opacity: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -965,6 +967,7 @@ strong {
 
 #all #work .mobile_work .mobiles .mobiles_title h1,
 #all #work .mobile_work .mobiles .creation_date h1 {
+  color: var(--color0);
   font-size: 0.8em;
   margin-left: 5%;
 }
@@ -975,7 +978,7 @@ strong {
   content: "";
   width: 50%;
   height: 4%;
-  background: #000;
+  background: var(--color0);
   bottom: -4%;
   left: 0%;
 }
@@ -1093,6 +1096,7 @@ strong {
   top: 2%;
   left: 1em;
   color: #000;
+  font-size: 0.9em;
   font-weight: 900;
   text-shadow: 1px 0px 0px black;
   z-index: 10;
@@ -1134,15 +1138,15 @@ strong {
 }
 
 #all #designe .all_desinge_container .designe_post_grid {
-  width: 63em;
+  width: 48em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20em 20em 20em;
-      grid-template-columns: 20em 20em 20em;
+  -ms-grid-columns: 15em 15em 15em;
+      grid-template-columns: 15em 15em 15em;
   grid-column-gap: 1.5em;
   grid-row-gap: 1.5em;
-  -ms-grid-rows: 11em 11em 11em;
-      grid-template-rows: 11em 11em 11em;
+  -ms-grid-rows: 8em 8em 8em;
+      grid-template-rows: 8em 8em 8em;
 }
 
 #all #designe .all_desinge_container .designe_post {
@@ -1154,13 +1158,12 @@ strong {
           box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 0.2);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  height: 11em;
+  height: 8em;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 #all #designe .all_desinge_container .designe_post:hover {
-  height: 13em;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   z-index: 2;
@@ -1277,9 +1280,8 @@ strong {
 }
 
 #all #sckil #sckil_navbar .sckils {
-  width: 70%;
-  min-height: 1.8em;
-  max-height: 2em;
+  width: 74%;
+  height: 1.6em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1303,7 +1305,7 @@ strong {
 
 #all #sckil #sckil_navbar .sckils h1 {
   margin-left: 1em;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 #all #sckil #sckil_navbar .sckils:hover {
@@ -1369,7 +1371,7 @@ strong {
 }
 
 #all #sckil #techno_presantation_container .techno_logo h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 #all #sckil #techno_presantation_container .techno_presantation,
@@ -1381,7 +1383,7 @@ strong {
   border-radius: 0.2em;
   margin-top: 2%;
   left: 6%;
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: 700;
   overflow: hidden;
 }
@@ -1396,8 +1398,9 @@ strong {
 #all #sckil #techno_presantation_container .techno_experienc .techno_title {
   width: 100%;
   height: 15%;
+  font-size: 1.1em;
   background: rgba(0, 0, 0, 0.2);
-  color: var(--color0);
+  color: var(--colorX);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1435,7 +1438,7 @@ strong {
 }
 
 #all #sckil #techno_presantation_container .techno_experienc {
-  height: 30%;
+  height: 25%;
   margin-top: 0%;
 }
 
@@ -1467,6 +1470,7 @@ strong {
   top: 2%;
   left: 1em;
   color: #000;
+  font-size: 0.9em;
   font-weight: 900;
   text-shadow: 1px 0px 0px black;
   z-index: 10;
@@ -1513,13 +1517,13 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
   align-items: center;
-  line-height: 4em;
+  line-height: 3.2em;
   font-family: "Notable", sans-serif;
   z-index: 3;
 }
 
 #all #contact .contact_container_flex .contact_container .contact_cart {
-  font-size: 4.5em;
+  font-size: 4em;
   font-stretch: condensed;
   color: var(--color0);
   display: -webkit-box;
@@ -1575,11 +1579,11 @@ strong {
       -ms-flex-align: center;
           align-items: center;
   color: var(--color0);
-  background-color: #000;
-  font-size: 0.7em;
+  background-color: var(--colorX);
+  font-size: 0.6em;
   border: 0.3em #000 solid;
   border-radius: 0.1em;
-  opacity: 0.2;
+  opacity: 0.1;
   -webkit-transition: all 1s;
   transition: all 1s;
   position: absolute;
