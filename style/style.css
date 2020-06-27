@@ -14,7 +14,7 @@ body {
   display: flex;
   font-family: "Baloo Thambi 2", cursive;
   font-family: "Roboto", sans-serif;
-  cursor: url("images/Sans.svg"), auto;
+  cursor: url("images/cursor.svg"), auto;
   overflow: hidden;
 }
 
@@ -1002,7 +1002,12 @@ strong {
   background: transparent;
 }
 
+#all #work .mobile_work .mobiles1 {
+  background-image: url(images/6c335ade51e70660ac9c160cd903a258.jpg);
+}
+
 #all #work .mobile_work .mobiles2 {
+  background-image: url(images/8af15509f80a6109b8051df2c3bd04d1.jpg);
   margin-top: 5em;
 }
 
@@ -1014,6 +1019,10 @@ strong {
 #all #work .mobile_work .mobiles2 .creation_date {
   top: 1.2%;
   left: 20%;
+}
+
+#all #work .mobile_work .mobiles3 {
+  background-image: url(images/48325806467331c03c99e98fda4a0cd4.jpg);
 }
 
 #all #work .mobile_work .mobiles3 .mobiles_title {

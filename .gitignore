@@ -1,3 +1,4 @@
 .vscode/*
 style/images/*
 *.scss
+*.css.map
