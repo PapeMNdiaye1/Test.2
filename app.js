@@ -211,17 +211,23 @@ function tabClick(e) {
     }
     all[1].style.display = "block";
   }
-  if (item == titletabs[3]) {
+  if (item == titletabs[2]) {
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
     all[2].style.display = "block";
   }
-  if (item == titletabs[4]) {
+  if (item == titletabs[3]) {
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
     all[3].style.display = "block";
+  }
+  if (item == titletabs[4]) {
+    for (let i = 0; i < all.length; i++) {
+      all[i].style.display = "none";
+    }
+    all[4].style.display = "block";
   }
   // ##################################
 
@@ -428,6 +434,7 @@ const positionOfContacteInfo = (index) => {
     contactCartInfo.style.opacity = "";
     contactCartInfo.style.zIndex = "";
   });
+  let infoW = contactCartInfos[index].getBoundingClientRect().width;
 
   let cartY = contactCarts[index].getBoundingClientRect().y;
   let cartH = contactCarts[index].getBoundingClientRect().height;
@@ -436,7 +443,7 @@ const positionOfContacteInfo = (index) => {
   let cartW = contactCarts[index].getBoundingClientRect().width;
 
   contactCartInfos[index].style.top = cartY + cartH + "px";
-  contactCartInfos[index].style.left = cartX + cartW + "px";
+  contactCartInfos[index].style.left = cartX + cartW - infoW + "px";
   contactCartInfos[index].style.opacity = "1";
   contactCartInfos[index].style.zIndex = "14";
 };

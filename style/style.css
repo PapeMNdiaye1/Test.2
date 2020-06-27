@@ -1078,8 +1078,8 @@ strong {
 
 #all #designe {
   background: var(--color0);
-  z-index: 7;
-  display: block;
+  z-index: 1;
+  display: none;
 }
 
 #all #designe #designe_background {
@@ -1565,6 +1565,15 @@ strong {
 }
 
 #all #contact .contact_container_flex .contact_cart_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--color0);
   background-color: #000;
   font-size: 0.7em;
