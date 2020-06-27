@@ -1627,7 +1627,7 @@ strong {
 #left_bar {
   top: 2vh;
   left: 0;
-  width: 3em;
+  width: 2.5em;
   height: 96vh;
   background-color: var(--color0);
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
@@ -1648,12 +1648,12 @@ strong {
   position: absolute;
   top: 2.5vh;
   left: 15%;
-  width: 2em;
-  height: 2em;
+  width: 1.7em;
+  height: 1.7em;
   background-image: url(images/face.jpg);
   background-size: 100%;
   border-radius: 50%;
-  border: 1px var(--colorX) solid;
+  border: 0.08em var(--colorX) solid;
   -webkit-box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
 }
@@ -1673,7 +1673,7 @@ strong {
 
 #left_bar #tabs {
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: -3.9em;
   width: 6em;
   height: 40vh;
@@ -1689,6 +1689,7 @@ strong {
   position: absolute;
   top: 30%;
   right: 37%;
+  font-size: 0.9em;
   font-weight: 700;
   text-align: center;
   width: 70%;
@@ -1701,8 +1702,8 @@ strong {
 #left_bar .tab {
   margin-bottom: 2em;
   left: 0em;
-  width: 100%;
-  height: 2.5em;
+  width: 95%;
+  height: 2.3em;
   font-size: 0.8em;
   -webkit-box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.3);
@@ -1752,7 +1753,7 @@ strong {
   width: 2.2em;
   height: 100%;
   text-align: right;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-right: 6px;
   pointer-events: none;
 }
@@ -1771,7 +1772,7 @@ strong {
   position: absolute;
   top: 30%;
   right: 37%;
-  font-weight: 700;
+  font-weight: 600;
   pointer-events: none;
 }
 
