@@ -19,6 +19,7 @@ const work_tabs = document.querySelectorAll(".work_tabs");
 const sckils = document.querySelectorAll(".sckils");
 const stuffsImgInternes = document.querySelectorAll(".stuffs_img_interne");
 const presantation_child = document.querySelector(".presantation");
+
 // #####################
 const technoPresantation = document.querySelector(".techno_presantation");
 const technoExperienc = document.querySelector(".techno_experienc");
