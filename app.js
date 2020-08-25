@@ -5,30 +5,37 @@ const titletabs = document.querySelectorAll(".tab");
 const mode = document.querySelector(".mode");
 const mode1 = document.querySelector(".mode1");
 const mode2 = document.querySelector(".mode2");
+// const quiSommesNous = document.querySelector(".qui_sommes_nous");
+// const motDeLarchitect = document.querySelector(".mot_de_larchitect");
+// const ficheDeRenseignements = document.querySelector(
+//   ".fiche_de_renseignements"
+// );
 const tabs = document.getElementsByClassName("tab");
 const stuffs = document.getElementsByClassName("stuffs");
 const presantation = document.querySelector("#pres_invi");
 const turbulence = document.querySelector("#turbulence");
+const naves = document.querySelectorAll(".nave");
 // #####################
 const pres_title = document.querySelector("#pres_title");
 const workNavbar = document.querySelector("#work_navbar");
 const web_work = document.querySelector(".web_work");
 const mobile_work = document.querySelector(".mobile_work");
-const perso_work = document.querySelector(".preso_work");
 const work_tabs = document.querySelectorAll(".work_tabs");
-const sckils = document.querySelectorAll(".sckils");
 const stuffsImgInternes = document.querySelectorAll(".stuffs_img_interne");
+const homeContains = document.querySelectorAll(".home_contain");
 const presantation_child = document.querySelector(".presantation");
-
 // #####################
 const technoPresantation = document.querySelector(".techno_presantation");
 const technoExperienc = document.querySelector(".techno_experienc");
 const technoLogo = document.querySelector(".techno_logo");
 const contact = document.querySelector("#contact");
+const face = document.querySelector("#face");
 /*################################################################################*/
+
 /*
   !#############################      CLASS     ################################
 */
+
 /*################################################################################*/
 
 class Carousel {
@@ -133,52 +140,52 @@ class Carousel {
 
 // ?                                      MODE-TRANSITION
 
-const darckmode = (
-  a = "",
-  b = "",
-  c = "",
-  d = "",
-  e = "",
-  f = "",
-  g = "",
-  h = ""
-) => {
-  mode1.style.display = a;
-  mode2.style.display = b;
-  mode_check.style.left = c;
-  body.style.setProperty("--color_worck_navbar", d);
-  body.style.setProperty("--color0", e);
-  body.style.setProperty("--colorX", f);
-  body.style.setProperty("--color_bak", g);
-  body.style.setProperty("--color_tab_hover", h);
-};
+// const darckmode = (
+//   a = "",
+//   b = "",
+//   c = "",
+//   d = "",
+//   e = "",
+//   f = "",
+//   g = "",
+//   h = ""
+// ) => {
+//   mode1.style.display = a;
+//   mode2.style.display = b;
+//   mode_check.style.left = c;
+//   body.style.setProperty("--color_worck_navbar", d);
+//   body.style.setProperty("--color0", e);
+//   body.style.setProperty("--colorX", f);
+//   body.style.setProperty("--color_bak", g);
+//   body.style.setProperty("--color_tab_hover", h);
+// };
 
-function theme(e) {
-  const item = e.target;
-  if (item.classList[0] === "mode1") {
-    darckmode(
-      "none",
-      "block",
-      "55%",
-      "",
-      "#a3795e",
-      "#4D1720",
-      "rgba(0,0,0,.1)",
-      "#4D1720"
-    );
-  }
-  if (item.classList[0] === "mode2") {
-    darckmode("block", "none");
-  }
-}
+// function theme(e) {
+//   const item = e.target;
+//   if (item.classList[0] === "mode1") {
+//     darckmode(
+//       "none",
+//       "block",
+//       "55%",
+//       "",
+//       "#a3795e",
+//       "#4D1720",
+//       "rgba(0,0,0,.1)",
+//       "#4D1720"
+//     );
+//   }
+//   if (item.classList[0] === "mode2") {
+//     darckmode("block", "none");
+//   }
+// }
 // ?                                      PARAM HOVER
 
-const paramHover = (a = "", b = "", c = "", d = "") => {
-  param_extra.style.zIndex = a;
-  param_extra.style.transitionDelay = b;
-  param.style.width = c;
-  param.style.borderLeft = d;
-};
+// const paramHover = (a = "", b = "", c = "", d = "") => {
+//   param_extra.style.zIndex = a;
+//   param_extra.style.transitionDelay = b;
+//   param.style.width = c;
+//   param.style.borderLeft = d;
+// };
 
 // ?                                      LEFT_BAR HOVER
 
@@ -201,24 +208,31 @@ function tabClick(e) {
   this.style.background = "";
   this.style.left = "65%";
   if (item == titletabs[0]) {
+    face.style.left = "";
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
     all[0].style.display = "block";
   }
   if (item == titletabs[1]) {
+    face.style.left = "15%";
+
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
     all[1].style.display = "block";
   }
   if (item == titletabs[2]) {
+    face.style.left = "15%";
+
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
     all[2].style.display = "block";
   }
   if (item == titletabs[3]) {
+    face.style.left = "15%";
+
     for (let i = 0; i < all.length; i++) {
       all[i].style.display = "none";
     }
@@ -301,70 +315,71 @@ function stuffClick(e) {
 // ?                                      WORK
 const work = (e) => {
   var item = e.target;
-  if (item.innerText === "Web") {
+  if (item.innerText === "Terminés") {
     web_work.classList.add("web_work_visible");
     mobile_work.classList.remove("mobile_work_visible");
-    perso_work.classList.remove("preso_work_visible");
+    // perso_work.classList.remove("preso_work_visible");
     work_tabs.forEach((tabs) => {
       tabs.classList.remove("activ_tab");
     });
     item.classList.add("activ_tab");
-  } else if (item.innerText === "Mobile") {
+  } else if (item.innerText === "En Cours...") {
     web_work.classList.remove("web_work_visible");
     mobile_work.classList.add("mobile_work_visible");
-    perso_work.classList.remove("preso_work_visible");
-    work_tabs.forEach((tabs) => {
-      tabs.classList.remove("activ_tab");
-    });
-    item.classList.add("activ_tab");
-  } else if (item.innerText === "Perso") {
-    web_work.classList.remove("web_work_visible");
-    mobile_work.classList.remove("mobile_work_visible");
-    perso_work.classList.add("preso_work_visible");
+    // perso_work.classList.remove("preso_work_visible");
     work_tabs.forEach((tabs) => {
       tabs.classList.remove("activ_tab");
     });
     item.classList.add("activ_tab");
   }
+  // else if (item.innerText === "Perso") {
+  //   web_work.classList.remove("web_work_visible");
+  //   mobile_work.classList.remove("mobile_work_visible");
+  //   // perso_work.classList.add("preso_work_visible");
+  //   work_tabs.forEach((tabs) => {
+  //     tabs.classList.remove("activ_tab");
+  //   });
+  //   item.classList.add("activ_tab");
+  // }
 };
-// ?                                      SCKILS
+//                                       SCKILS
 
-const technoInfo = (i) => {
-  for (let x = 0; x < sckils.length; x++) {
-    sckils[x].classList.remove("sckils_selected");
-  }
-  sckils[i].classList.add("sckils_selected");
-  const descriptionContainer = technoPresantation.children[1];
-  const titleContainer = technoPresantation.children[0];
-  const experContainer = technoExperienc.children[1];
-  const logoContainer = technoLogo.children[0];
-  let theDescription = sckils[i].children[2].textContent;
-  let title = sckils[i].children[1].textContent;
-  let expe = sckils[i].children[3].cloneNode(true);
-  let logo = sckils[i].children[0].cloneNode(true);
-  // #####################
-  descriptionContainer.textContent = theDescription;
-  titleContainer.innerHTML = title;
-  experContainer.innerHTML = "";
-  experContainer.appendChild(expe);
-  logoContainer.innerHTML = "";
-  logoContainer.appendChild(logo);
-};
+// const technoInfo = (i) => {
+//   for (let x = 0; x < sckils.length; x++) {
+//     sckils[x].classList.remove("sckils_selected");
+//   }
+//   sckils[i].classList.add("sckils_selected");
+//   const descriptionContainer = technoPresantation.children[1];
+//   const titleContainer = technoPresantation.children[0];
+//   const experContainer = technoExperienc.children[1];
+//   const logoContainer = technoLogo.children[0];
+//   let theDescription = sckils[i].children[2].textContent;
+//   let title = sckils[i].children[1].textContent;
+//   let expe = sckils[i].children[3].cloneNode(true);
+//   let logo = sckils[i].children[0].cloneNode(true);
+//   // #####################
+//   descriptionContainer.textContent = theDescription;
+//   titleContainer.innerHTML = title;
+//   experContainer.innerHTML = "";
+//   experContainer.appendChild(expe);
+//   logoContainer.innerHTML = "";
+//   logoContainer.appendChild(logo);
+// };
 /*################################################################################*/
 /*
 !#############################      EVENTS      ##############################
 */
 /*################################################################################*/
-param.addEventListener(
-  "mouseover",
-  paramHover.bind(null, "2", "", "2.5em", "0em var(--color0) solid")
-);
-param.addEventListener("mouseout", paramHover.bind(null, "", ".5s", "", ""));
-param.addEventListener("click", theme);
+// param.addEventListener(
+//   "mouseover",
+//   paramHover.bind(null, "2", "", "2.5em", "0em var(--color0) solid")
+// );
+// param.addEventListener("mouseout", paramHover.bind(null, "", ".5s", "", ""));
+// param.addEventListener("click", theme);
 // ################################################################
 left_bar.addEventListener(
   "mouseover",
-  leftBarHover.bind(null, "7em", "65%", ".3s")
+  leftBarHover.bind(null, "9em", "65%", ".3s")
 );
 left_bar.addEventListener("mouseout", leftBarHover.bind(null, "", "", ""));
 //#########
@@ -382,9 +397,31 @@ workNavbar.addEventListener("click", (e) => {
   work(e);
 });
 // ################################################################
-for (let i = 0; i < sckils.length; i++) {
-  sckils[i].addEventListener("click", () => {
-    technoInfo(i);
+for (let i = 0; i < naves.length; i++) {
+  naves[i].addEventListener("click", (e) => {
+    for (nave of naves) {
+      nave.classList.remove("nave_active");
+    }
+    e.target.classList.add("nave_active");
+
+    if (e.target === naves[0]) {
+      for (homeContain of homeContains) {
+        homeContain.classList.remove("home_contain_active");
+      }
+      homeContains[0].classList.add("home_contain_active");
+    }
+    if (e.target === naves[1]) {
+      for (homeContain of homeContains) {
+        homeContain.classList.remove("home_contain_active");
+      }
+      homeContains[1].classList.add("home_contain_active");
+    }
+    if (e.target === naves[2]) {
+      for (homeContain of homeContains) {
+        homeContain.classList.remove("home_contain_active");
+      }
+      homeContains[2].classList.add("home_contain_active");
+    }
   });
 }
 // ##############################################################

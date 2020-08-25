@@ -1,4 +1,7 @@
 .vscode/*
-style/images/*
+.style/images/*
 *.scss
+# *.jpg
+# *.svg
 *.css.map
+.jpg\n*.jpeg\n*.png\n*.gif\n
